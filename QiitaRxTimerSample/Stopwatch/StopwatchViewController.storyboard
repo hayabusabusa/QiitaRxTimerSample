@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rIq-qO-JcK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stopwatch View Controller-->
+        <scene sceneID="2F9-C8-YZO">
+            <objects>
+                <viewController id="rIq-qO-JcK" customClass="StopwatchViewController" customModule="QiitaRxTimerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P55-pi-AVA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j72-61-bUd">
+                                <rect key="frame" x="142" y="399.5" width="130" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fIe-U8-pDo">
+                                <rect key="frame" x="40" y="750" width="334" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFw-5R-gaj">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gFw-5R-gaj" secondAttribute="height" multiplier="1:1" id="rc9-1z-M3E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="ストップ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="44"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ba-jm-IGP">
+                                        <rect key="frame" x="246" y="0.0" width="88" height="88"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7ba-jm-IGP" secondAttribute="height" multiplier="1:1" id="G83-ST-egf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="スタート">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="44"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="6lH-Aj-hWI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j72-61-bUd" firstAttribute="centerY" secondItem="P55-pi-AVA" secondAttribute="centerY" constant="-32" id="Afj-jS-RQT"/>
+                            <constraint firstItem="fIe-U8-pDo" firstAttribute="leading" secondItem="X58-ew-3sk" secondAttribute="leading" constant="40" id="dRR-FM-Ybq"/>
+                            <constraint firstItem="j72-61-bUd" firstAttribute="centerX" secondItem="P55-pi-AVA" secondAttribute="centerX" id="jrn-xY-jp4"/>
+                            <constraint firstItem="X58-ew-3sk" firstAttribute="bottom" secondItem="fIe-U8-pDo" secondAttribute="bottom" constant="24" id="woO-jW-Nzi"/>
+                            <constraint firstItem="X58-ew-3sk" firstAttribute="trailing" secondItem="fIe-U8-pDo" secondAttribute="trailing" constant="40" id="yZz-jo-Bzz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X58-ew-3sk"/>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="7ba-jm-IGP" id="hyU-sY-Hcb"/>
+                        <outlet property="stopButton" destination="gFw-5R-gaj" id="Js6-8Z-OFF"/>
+                        <outlet property="timerLabel" destination="j72-61-bUd" id="O5C-OO-LfT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69q-hc-cBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="28"/>
+        </scene>
+    </scenes>
+</document>

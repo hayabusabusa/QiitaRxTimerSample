@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7106984623BEFF4500266F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106984523BEFF4500266F69 /* AppDelegate.swift */; };
+		7106984823BEFF4500266F69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106984723BEFF4500266F69 /* SceneDelegate.swift */; };
+		7106984A23BEFF4500266F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106984923BEFF4500266F69 /* ViewController.swift */; };
+		7106984D23BEFF4500266F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7106984B23BEFF4500266F69 /* Main.storyboard */; };
+		7106984F23BEFF4900266F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7106984E23BEFF4900266F69 /* Assets.xcassets */; };
+		7106985223BEFF4900266F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7106985023BEFF4900266F69 /* LaunchScreen.storyboard */; };
+		7106985D23BEFFAE00266F69 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7106985A23BEFFAE00266F69 /* RxCocoa.framework */; };
+		7106985F23BEFFAE00266F69 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7106985B23BEFFAE00266F69 /* RxSwift.framework */; };
+		7106986123BEFFAE00266F69 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7106985C23BEFFAE00266F69 /* RxRelay.framework */; };
+		7106986B23BF027A00266F69 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106986A23BF027A00266F69 /* StopwatchViewController.swift */; };
+		7106986D23BF02A300266F69 /* StopwatchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7106984223BEFF4500266F69 /* QiitaRxTimerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaRxTimerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7106984523BEFF4500266F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7106984723BEFF4500266F69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7106984923BEFF4500266F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7106984C23BEFF4500266F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7106984E23BEFF4900266F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7106985123BEFF4900266F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7106985323BEFF4900266F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7106985A23BEFFAE00266F69 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		7106985B23BEFFAE00266F69 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		7106985C23BEFFAE00266F69 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		7106986A23BF027A00266F69 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StopwatchViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7106983F23BEFF4500266F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7106985F23BEFFAE00266F69 /* RxSwift.framework in Frameworks */,
+				7106985D23BEFFAE00266F69 /* RxCocoa.framework in Frameworks */,
+				7106986123BEFFAE00266F69 /* RxRelay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7106983923BEFF4500266F69 = {
+			isa = PBXGroup;
+			children = (
+				7106984423BEFF4500266F69 /* QiitaRxTimerSample */,
+				7106984323BEFF4500266F69 /* Products */,
+				7106985923BEFFAE00266F69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7106984323BEFF4500266F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7106984223BEFF4500266F69 /* QiitaRxTimerSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7106984423BEFF4500266F69 /* QiitaRxTimerSample */ = {
+			isa = PBXGroup;
+			children = (
+				7106984523BEFF4500266F69 /* AppDelegate.swift */,
+				7106984723BEFF4500266F69 /* SceneDelegate.swift */,
+				7106986523BF000E00266F69 /* Main */,
+				7106986923BF025D00266F69 /* Stopwatch */,
+				7106984E23BEFF4900266F69 /* Assets.xcassets */,
+				7106985023BEFF4900266F69 /* LaunchScreen.storyboard */,
+				7106985323BEFF4900266F69 /* Info.plist */,
+			);
+			path = QiitaRxTimerSample;
+			sourceTree = "<group>";
+		};
+		7106985923BEFFAE00266F69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7106985A23BEFFAE00266F69 /* RxCocoa.framework */,
+				7106985C23BEFFAE00266F69 /* RxRelay.framework */,
+				7106985B23BEFFAE00266F69 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7106986523BF000E00266F69 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7106984923BEFF4500266F69 /* ViewController.swift */,
+				7106984B23BEFF4500266F69 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7106986923BF025D00266F69 /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				7106986A23BF027A00266F69 /* StopwatchViewController.swift */,
+				7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7106984123BEFF4500266F69 /* QiitaRxTimerSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7106985623BEFF4900266F69 /* Build configuration list for PBXNativeTarget "QiitaRxTimerSample" */;
+			buildPhases = (
+				7106983E23BEFF4500266F69 /* Sources */,
+				7106983F23BEFF4500266F69 /* Frameworks */,
+				7106984023BEFF4500266F69 /* Resources */,
+				7106986423BEFFC100266F69 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiitaRxTimerSample;
+			productName = QiitaRxTimerSample;
+			productReference = 7106984223BEFF4500266F69 /* QiitaRxTimerSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7106983A23BEFF4500266F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Shunya Yamada";
+				TargetAttributes = {
+					7106984123BEFF4500266F69 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 7106983D23BEFF4500266F69 /* Build configuration list for PBXProject "QiitaRxTimerSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7106983923BEFF4500266F69;
+			productRefGroup = 7106984323BEFF4500266F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7106984123BEFF4500266F69 /* QiitaRxTimerSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7106984023BEFF4500266F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7106985223BEFF4900266F69 /* LaunchScreen.storyboard in Resources */,
+				7106986D23BF02A300266F69 /* StopwatchViewController.storyboard in Resources */,
+				7106984F23BEFF4900266F69 /* Assets.xcassets in Resources */,
+				7106984D23BEFF4500266F69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7106986423BEFFC100266F69 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7106983E23BEFF4500266F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7106986B23BF027A00266F69 /* StopwatchViewController.swift in Sources */,
+				7106984A23BEFF4500266F69 /* ViewController.swift in Sources */,
+				7106984623BEFF4500266F69 /* AppDelegate.swift in Sources */,
+				7106984823BEFF4500266F69 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7106984B23BEFF4500266F69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7106984C23BEFF4500266F69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7106985023BEFF4900266F69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7106985123BEFF4900266F69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7106985423BEFF4900266F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7106985523BEFF4900266F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7106985723BEFF4900266F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = QiitaRxTimerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Shunya.yamada.QiitaRxTimerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7106985823BEFF4900266F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = QiitaRxTimerSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Shunya.yamada.QiitaRxTimerSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7106983D23BEFF4500266F69 /* Build configuration list for PBXProject "QiitaRxTimerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7106985423BEFF4900266F69 /* Debug */,
+				7106985523BEFF4900266F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7106985623BEFF4900266F69 /* Build configuration list for PBXNativeTarget "QiitaRxTimerSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7106985723BEFF4900266F69 /* Debug */,
+				7106985823BEFF4900266F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7106983A23BEFF4500266F69 /* Project object */;
+}
