@@ -12,6 +12,10 @@ import RxCocoa
 
 final class BgStopwatchViewController: UIViewController {
     
+    // MARK: Typealias
+    
+    typealias Dependency = TimerState
+    
     // MARK: IBOutlet
     
     @IBOutlet private weak var timerLabel: UILabel!
@@ -20,12 +24,21 @@ final class BgStopwatchViewController: UIViewController {
     
     // MARK: Properties
     
+    private var dependency: Dependency?
+    
     private let isValidRelay: BehaviorRelay<Bool> = .init(value: false)
     private let secondsRelay: BehaviorRelay<Int> = .init(value: 0)
     
     private let disposeBag = DisposeBag()
     
     // MARK: Lifecycle
+    
+    static func instantiate(dependency: Dependency) -> BgStopwatchViewController {
+        let vc = UIStoryboard(name: "BgStopwatchViewController", bundle: nil)
+            .instantiateViewController(identifier: "BgStopwatchViewController") as! BgStopwatchViewController
+        vc.dependency = dependency
+        return vc
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +47,7 @@ final class BgStopwatchViewController: UIViewController {
         setupButtons()
         setupLabel()
         setupTimer()
+        setupDependency()
     }
 }
 
@@ -103,6 +117,19 @@ extension BgStopwatchViewController {
                 self.secondsRelay.accept(self.secondsRelay.value + 1)
             })
             .disposed(by: disposeBag)
+    }
+    
+    private func setupDependency() {
+        guard let dependency = self.dependency else { return }
+        // タイマーが動いていた場合はバックグラウンドにいた時間を足す
+        if dependency.isValid == true {
+            let interval = Int(Date().timeIntervalSince(dependency.enterBackground))
+            secondsRelay.accept(dependency.seconds + interval)
+        } else {
+            secondsRelay.accept(dependency.seconds)
+        }
+        isValidRelay.accept(dependency.isValid)
+        UserDefaultsManager().removeObject(for: .timerState)
     }
 }
 
