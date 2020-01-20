@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qtV-et-D0f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bg Stopwatch View Controller-->
+        <scene sceneID="mFp-I4-70h">
+            <objects>
+                <viewController id="4Z8-AD-Ped" customClass="BgStopwatchViewController" customModule="QiitaRxTimerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8xK-eM-lJh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwp-gp-X1x">
+                                <rect key="frame" x="142" y="399.5" width="130" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oOs-kH-Xi0">
+                                <rect key="frame" x="40" y="750" width="334" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWA-on-66q">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EWA-on-66q" secondAttribute="height" multiplier="1:1" id="NiC-D4-dPW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="ストップ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="44"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-zy-sMV">
+                                        <rect key="frame" x="246" y="0.0" width="88" height="88"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WGQ-zy-sMV" secondAttribute="height" multiplier="1:1" id="xnU-v6-zai"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <state key="normal" title="スタート">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="44"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="X9E-Mz-SlH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vm8-Gx-Emj" firstAttribute="bottom" secondItem="oOs-kH-Xi0" secondAttribute="bottom" constant="24" id="Ujx-yf-TbI"/>
+                            <constraint firstItem="oOs-kH-Xi0" firstAttribute="leading" secondItem="vm8-Gx-Emj" secondAttribute="leading" constant="40" id="UoF-FW-8Cs"/>
+                            <constraint firstItem="vm8-Gx-Emj" firstAttribute="trailing" secondItem="oOs-kH-Xi0" secondAttribute="trailing" constant="40" id="aeI-ZY-Hob"/>
+                            <constraint firstItem="lwp-gp-X1x" firstAttribute="centerY" secondItem="8xK-eM-lJh" secondAttribute="centerY" constant="-32" id="kOI-ox-Bld"/>
+                            <constraint firstItem="lwp-gp-X1x" firstAttribute="centerX" secondItem="8xK-eM-lJh" secondAttribute="centerX" id="kg5-tz-CqF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vm8-Gx-Emj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="81g-QB-tQf"/>
+                    <connections>
+                        <outlet property="startButton" destination="WGQ-zy-sMV" id="iX8-6A-v4B"/>
+                        <outlet property="stopButton" destination="EWA-on-66q" id="J5u-WB-ogj"/>
+                        <outlet property="timerLabel" destination="lwp-gp-X1x" id="Tyu-94-wgR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tje-FS-gnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128.985507246377" y="-202.23214285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TGG-4M-Jfv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qtV-et-D0f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xn4-mX-LUB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Z8-AD-Ped" kind="relationship" relationship="rootViewController" id="r5b-Un-LNA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBW-ia-m1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.84057971014494" y="-202.23214285714286"/>
+        </scene>
+    </scenes>
+</document>

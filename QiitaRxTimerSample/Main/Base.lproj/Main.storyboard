@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZjN-rd-daZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZjN-rd-daZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,6 +44,35 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="バックグラウンド対応板" id="3HV-v8-1Zy">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="43.5" id="fHc-Lg-6go">
+                                        <rect key="frame" x="0.0" y="117.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fHc-Lg-6go" id="Be0-nz-ND5">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ストップウォッチ (バックグラウンド対応版)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-vk-SNI">
+                                                    <rect key="frame" x="16" y="8" width="351" height="27.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Gew-vk-SNI" secondAttribute="trailing" constant="16" id="76F-5X-Nv1"/>
+                                                <constraint firstItem="Gew-vk-SNI" firstAttribute="top" secondItem="Be0-nz-ND5" secondAttribute="top" constant="8" id="8wB-fe-Ie6"/>
+                                                <constraint firstItem="Gew-vk-SNI" firstAttribute="leading" secondItem="Be0-nz-ND5" secondAttribute="leading" constant="16" id="Q35-S9-0Ai"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gew-vk-SNI" secondAttribute="bottom" constant="8" id="wyf-iW-woA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rpN-d4-5c6" kind="presentation" modalPresentationStyle="fullScreen" id="fED-fY-eMx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="D73-iZ-fXF" id="f0E-aM-ZYx"/>
@@ -55,6 +84,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gf-YC-0cv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030.4347826086957" y="77.678571428571431"/>
+        </scene>
+        <!--BgStopwatchViewController-->
+        <scene sceneID="5Sj-TU-8Yn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BgStopwatchViewController" id="rpN-d4-5c6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4bK-qB-EUc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qcg-yX-RRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="-39"/>
         </scene>
         <!--StopwatchViewController-->
         <scene sceneID="WjK-tP-1RZ">

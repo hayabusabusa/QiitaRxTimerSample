@@ -18,6 +18,8 @@
 		7106986123BEFFAE00266F69 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7106985C23BEFFAE00266F69 /* RxRelay.framework */; };
 		7106986B23BF027A00266F69 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106986A23BF027A00266F69 /* StopwatchViewController.swift */; };
 		7106986D23BF02A300266F69 /* StopwatchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */; };
+		A403022F23D575D700264F5C /* BgStopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403022E23D575D700264F5C /* BgStopwatchViewController.swift */; };
+		A403023123D575EE00264F5C /* BgStopwatchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A403023023D575EE00264F5C /* BgStopwatchViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7106985C23BEFFAE00266F69 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		7106986A23BF027A00266F69 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StopwatchViewController.storyboard; sourceTree = "<group>"; };
+		A403022E23D575D700264F5C /* BgStopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgStopwatchViewController.swift; sourceTree = "<group>"; };
+		A403023023D575EE00264F5C /* BgStopwatchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BgStopwatchViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				7106984723BEFF4500266F69 /* SceneDelegate.swift */,
 				7106986523BF000E00266F69 /* Main */,
 				7106986923BF025D00266F69 /* Stopwatch */,
+				A403022D23D575BF00264F5C /* BgStopwatch */,
 				7106984E23BEFF4900266F69 /* Assets.xcassets */,
 				7106985023BEFF4900266F69 /* LaunchScreen.storyboard */,
 				7106985323BEFF4900266F69 /* Info.plist */,
@@ -107,6 +112,15 @@
 				7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */,
 			);
 			path = Stopwatch;
+			sourceTree = "<group>";
+		};
+		A403022D23D575BF00264F5C /* BgStopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				A403022E23D575D700264F5C /* BgStopwatchViewController.swift */,
+				A403023023D575EE00264F5C /* BgStopwatchViewController.storyboard */,
+			);
+			path = BgStopwatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 				7106986D23BF02A300266F69 /* StopwatchViewController.storyboard in Resources */,
 				7106984F23BEFF4900266F69 /* Assets.xcassets in Resources */,
 				7106984D23BEFF4500266F69 /* Main.storyboard in Resources */,
+				A403023123D575EE00264F5C /* BgStopwatchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7106986B23BF027A00266F69 /* StopwatchViewController.swift in Sources */,
+				A403022F23D575D700264F5C /* BgStopwatchViewController.swift in Sources */,
 				7106984A23BEFF4500266F69 /* ViewController.swift in Sources */,
 				7106984623BEFF4500266F69 /* AppDelegate.swift in Sources */,
 				7106984823BEFF4500266F69 /* SceneDelegate.swift in Sources */,
