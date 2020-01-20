@@ -15,12 +15,3 @@ class ViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
 }
-
-extension ViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 && indexPath.row == 0 {
-            
-        }
-    }
-}

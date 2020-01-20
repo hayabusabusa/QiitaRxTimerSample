@@ -83,7 +83,7 @@
 				7106986523BF000E00266F69 /* Main */,
 				7106986923BF025D00266F69 /* Stopwatch */,
 				A403022D23D575BF00264F5C /* BgStopwatch */,
-				A403023423D57ED000264F5C /* UserDefaults */,
+				A403023423D57ED000264F5C /* Utils */,
 				7106984E23BEFF4900266F69 /* Assets.xcassets */,
 				7106985023BEFF4900266F69 /* LaunchScreen.storyboard */,
 				7106985323BEFF4900266F69 /* Info.plist */,
@@ -128,13 +128,13 @@
 			path = BgStopwatch;
 			sourceTree = "<group>";
 		};
-		A403023423D57ED000264F5C /* UserDefaults */ = {
+		A403023423D57ED000264F5C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				A403023223D5791C00264F5C /* UserDefaultsManager.swift */,
 				A403023523D57EE600264F5C /* TimerState.swift */,
+				A403023223D5791C00264F5C /* UserDefaultsManager.swift */,
 			);
-			path = UserDefaults;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
