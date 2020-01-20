@@ -20,6 +20,8 @@
 		7106986D23BF02A300266F69 /* StopwatchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */; };
 		A403022F23D575D700264F5C /* BgStopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403022E23D575D700264F5C /* BgStopwatchViewController.swift */; };
 		A403023123D575EE00264F5C /* BgStopwatchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A403023023D575EE00264F5C /* BgStopwatchViewController.storyboard */; };
+		A403023323D5791C00264F5C /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403023223D5791C00264F5C /* UserDefaultsManager.swift */; };
+		A403023623D57EE600264F5C /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403023523D57EE600264F5C /* TimerState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		7106986C23BF02A300266F69 /* StopwatchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StopwatchViewController.storyboard; sourceTree = "<group>"; };
 		A403022E23D575D700264F5C /* BgStopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BgStopwatchViewController.swift; sourceTree = "<group>"; };
 		A403023023D575EE00264F5C /* BgStopwatchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BgStopwatchViewController.storyboard; sourceTree = "<group>"; };
+		A403023223D5791C00264F5C /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		A403023523D57EE600264F5C /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 				7106986523BF000E00266F69 /* Main */,
 				7106986923BF025D00266F69 /* Stopwatch */,
 				A403022D23D575BF00264F5C /* BgStopwatch */,
+				A403023423D57ED000264F5C /* UserDefaults */,
 				7106984E23BEFF4900266F69 /* Assets.xcassets */,
 				7106985023BEFF4900266F69 /* LaunchScreen.storyboard */,
 				7106985323BEFF4900266F69 /* Info.plist */,
@@ -121,6 +126,15 @@
 				A403023023D575EE00264F5C /* BgStopwatchViewController.storyboard */,
 			);
 			path = BgStopwatch;
+			sourceTree = "<group>";
+		};
+		A403023423D57ED000264F5C /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A403023223D5791C00264F5C /* UserDefaultsManager.swift */,
+				A403023523D57EE600264F5C /* TimerState.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +237,10 @@
 			files = (
 				7106986B23BF027A00266F69 /* StopwatchViewController.swift in Sources */,
 				A403022F23D575D700264F5C /* BgStopwatchViewController.swift in Sources */,
+				A403023323D5791C00264F5C /* UserDefaultsManager.swift in Sources */,
 				7106984A23BEFF4500266F69 /* ViewController.swift in Sources */,
 				7106984623BEFF4500266F69 /* AppDelegate.swift in Sources */,
+				A403023623D57EE600264F5C /* TimerState.swift in Sources */,
 				7106984823BEFF4500266F69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
